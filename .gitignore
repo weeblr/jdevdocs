@@ -1,0 +1,8 @@
+/.settings
+/.project
+/.buildpath
+/.externalToolBuilders
+/.vscode
+/node_modules
+/.idea
+/*.iml
