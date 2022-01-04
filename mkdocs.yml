@@ -1,4 +1,5 @@
 site_name: Joomla developer documentation test site
+site_url: https://weeblr.github.io/jdevdocs/
 theme:
   name: material
   custom_dir: overrides/
