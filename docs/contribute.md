@@ -9,6 +9,7 @@ author: JUG Extension developer
 The documentation content is built with [Mkdocs](https://www.mkdocs.org/) and the [Mkdocs Material theme](https://squidfunk.github.io/mkdocs-material/). A number of plugins are also enabled to allow for easy formatting of different content types.
 
 New content, or change to existing content is done in the same way code is modified:
+
 - fork this repository
 - make changes / add content in your fork
 - submit a Pull Request to this repo. 
