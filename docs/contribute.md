@@ -16,10 +16,10 @@ New content, or change to existing content is done in the same way code is modif
 !!! info "Administrator of this project will merge your changes or ask for adjustments before doing so."
 
 ??? tip "Read this"
-   Administrator of this project will merge your changes or ask for adjustments before doing so.
-   Administrator of this project will merge your changes or ask for adjustments before doing so.
+    Administrator of this project will merge your changes or ask for adjustments before doing so.
+    Administrator of this project will merge your changes or ask for adjustments before doing so.
    
-``` php
+``` php linenums="1"
 <?php echo 'Hello';
 
 ```
