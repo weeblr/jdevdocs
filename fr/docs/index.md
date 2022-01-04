@@ -1,10 +1,10 @@
 ---
-title: Joomla dev docs test site
-description: Joomla test site for building developer documentation
+title: FR Joomla dev docs test site
+description: FR Joomla test site for building developer documentation
 author: JUG Extension Developer
 ---
 
-# Welcome to Joomla developer documentation
+# Bienvenue sur la Documentation Joomla pour les développeurs
 
 This is a proof of concept website to develop a proper workflow and produce Joomla developer documentation.
 

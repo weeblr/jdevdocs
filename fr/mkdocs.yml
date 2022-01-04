@@ -1,8 +1,15 @@
+nav:
+  - Accueil: 'index.md'
+  - Contribuer: 'contribute.md'
+
+docs_dir: docs
+site_dir: '../docs/fr'
+
 site_name: Joomla developer documentation test site
-site_url: https://weeblr.github.io/jdevdocs/
+#site_url: https://weeblr.github.io/jdevdocs/
 theme:
   name: material
-  custom_dir: overrides/
+  custom_dir: _overrides/
   palette: 
     - scheme: default
       toggle:
@@ -15,9 +22,15 @@ theme:
 
 #  logo: https://xxxx.com/logo.png
 #  favicon: _images/favicon-32x32.png
-nav:
-  - Home: 'index.md'
-  - Contribute: 'contribute.md'
+
+extra:
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: French
+      link: /fr/
+      lang: fr
 
 extra_css:
   - '_assets/styles.css'

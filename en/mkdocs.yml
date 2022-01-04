@@ -1,0 +1,59 @@
+nav:
+  - Home: 'index.md'
+  - Contribute: 'contribute.md'
+
+docs_dir: docs
+site_dir: '../docs/en'
+
+site_name: Joomla developer documentation test site
+#site_url: https://weeblr.github.io/jdevdocs/
+theme:
+  name: material
+  custom_dir: _overrides/
+  palette: 
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+#  logo: https://xxxx.com/logo.png
+#  favicon: _images/favicon-32x32.png
+
+extra:
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: French
+      link: /fr/
+      lang: fr
+
+extra_css:
+  - '_assets/styles.css'
+extra_javascript:
+  - '_assets/code.js'
+  
+markdown_extensions:
+  - meta
+  - admonition
+  - codehilite:
+      linenums: true
+  - footnotes
+  - attr_list
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  #  - pymdownx.critic ## does not play well with blade templates comments syntax
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.mark
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  
+  
