@@ -1,5 +1,9 @@
 nav:
   - Home: 'index.md'
+  - Getting Started:
+      - Workstation setup: 'getting-started/workstation.md'
+      - Secure coding: 'getting-started/secure-coding-guidelines.md'
+      - Best practices: 'getting-started/joomla-dev-best-practises.md'
   - Contribute to this doc: 'contribute.md'
 
 docs_dir: docs
