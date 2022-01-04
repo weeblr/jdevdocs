@@ -11,6 +11,11 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - run: pip install mkdocs-material 
-      - run: mkdocs build -f en/mkdocs.yml
-      - run: mkdocs build -f fr/mkdocs.yml
+      - run: |
+        pip install mkdocs-material 
+        mkdocs build -f en/mkdocs.yml
+        mkdocs build -f fr/mkdocs.yml
+      - uses: JamesIves/github-pages-deploy-action@4.1.8
+        with:
+          branch: gh-pages
+          folder: docs
