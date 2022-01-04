@@ -12,9 +12,9 @@ jobs:
         with:
           python-version: 3.x
       - run: |
-        pip install mkdocs-material 
-        mkdocs build -f en/mkdocs.yml
-        mkdocs build -f fr/mkdocs.yml
+          pip install mkdocs-material 
+          mkdocs build -f en/mkdocs.yml
+          mkdocs build -f fr/mkdocs.yml
       - uses: JamesIves/github-pages-deploy-action@4.1.8
         with:
           branch: gh-pages
