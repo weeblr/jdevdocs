@@ -7,7 +7,6 @@ site_url: https://weeblr.github.io/jdevdocs/
 theme:
   name: material
   custom_dir: _overrides/
-  include_sidebar: false
   palette: 
     - scheme: default
       toggle:
