@@ -1,0 +1,34 @@
+site_name: Joomla developer documentation test site
+theme:
+  name: material
+  custom_dir: overrides/
+#  logo: https://xxxx.com/logo.png
+#  favicon: _images/favicon-32x32.png
+nav:
+  - Home: 'index.md'
+
+extra_css:
+  - '_assets/styles.css'
+extra_javascript:
+  - '_assets/code.js'
+  
+markdown_extensions:
+  - meta
+  - admonition
+  - codehilite:
+      linenums: true
+  - footnotes
+  - attr_list
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  #  - pymdownx.critic ## does not play well with blade templates comments syntax
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.mark
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  
+  
