@@ -13,7 +13,7 @@ New content, or change to existing content is done in the same way code is modif
 - make changes / add content in your fork
 - submit a Pull Request to this repo. 
 
-!!! "Administrator of this project will merge your changes or ask for adjustments before doing so."
+!!! info "Administrator of this project will merge your changes or ask for adjustments before doing so."
 
 ## Building and publishing
 
