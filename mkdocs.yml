@@ -2,6 +2,16 @@ site_name: Joomla developer documentation test site
 theme:
   name: material
   custom_dir: overrides/
+  palette: 
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
 #  logo: https://xxxx.com/logo.png
 #  favicon: _images/favicon-32x32.png
 nav:
