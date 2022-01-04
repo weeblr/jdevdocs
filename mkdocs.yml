@@ -16,6 +16,7 @@ theme:
 #  favicon: _images/favicon-32x32.png
 nav:
   - Home: 'index.md'
+  - Contribute: 'contribute.md'
 
 extra_css:
   - '_assets/styles.css'
