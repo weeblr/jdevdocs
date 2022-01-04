@@ -1,6 +1,6 @@
 nav:
   - Home: 'index.md'
-  - Contribute: 'contribute.md'
+  - Contribute to this doc: 'contribute.md'
 
 docs_dir: docs
 site_dir: '../docs/en'
