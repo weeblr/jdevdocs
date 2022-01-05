@@ -23,6 +23,9 @@ New content, or changes to existing content is done in the same way code is modi
 !!! info "The only thing absolutely required to make contribute to the documentation project is a [Github account](https://github.com/)."
 
 - You can make simple changes directly on the Github.com website, after forking the documentation repository.
+
+![Editing a documentation page directly on Github](../_images/github-editing.png)
+
 - For more complex changes, or simply more convience, use your regular git development workflow, with your preferred IDE (VSCode, Jetbrains IDES, Sublime Text,etc)
 
 ## Building and publishing

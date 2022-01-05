@@ -1,9 +1,22 @@
 /******************************************
  * Images
  */
-img {
+main img {
     -webkit-filter: drop-shadow(0.35rem 0.35rem 0.35rem #4A5568);
     filter: drop-shadow(0.35rem 0.35rem 0.23rem #4A5568);
+    border-radius: 0.5rem;
+}
+
+main .wb-focused-image{
+    max-width: initial;
+}
+
+main img:hover {
+    cursor: zoom-in;
+}
+
+main .wb-focused-image:hover {
+    cursor: zoom-out;
 }
 
 /******************************************

@@ -46,4 +46,46 @@ window.addEventListener("DOMContentLoaded", function (e) {
         }
     })
 })
+window.addEventListener("DOMContentLoaded", function (e) {
+    var tagsList = ['img']
+    var tags = []
+    tagsList.map(function (tag) {
+        tags[tag] = document.getElementsByTagName(tag)
+    })
+
+    let onFocusImageEvent = function (e) {
+        if (document.activeElement === e.target) {
+            e.target.classList.add('wb-focused-image')
+        } else {
+            e.target.classList.remove('wb-focused-image')
+            delete e.target.dataset.wbzoomed
+        }
+    }
+
+    let onClickImage = function (e) {
+        e.preventDefault()
+        e.stopPropagation()
+        if (document.activeElement === e.target) {
+            if (e.target.dataset.wbzoomed === 'true') {
+                e.target.classList.remove('wb-focused-image')
+                delete e.target.dataset.wbzoomed
+            } else {
+                e.target.classList.add('wb-focused-image')
+                e.target.dataset.wbzoomed = 'true'
+            }
+        }
+    }
+
+    let processTag = function (tag) {
+        tag.setAttribute('tabindex', '0')
+        tag.addEventListener("blur", onFocusImageEvent)
+        tag.addEventListener("focus", onFocusImageEvent)
+        tag.addEventListener("click", onClickImage)
+    }
+    tagsList.map(function (tag) {
+        for (let i = 0; i < tags[tag].length; i++) {
+            processTag(tags[tag][i])
+        }
+    })
+})
 // }
