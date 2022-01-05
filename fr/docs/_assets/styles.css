@@ -14,7 +14,16 @@ h2:target, h3:target, h4:target {
 }
 
 /******************************************
- * Auto link copy
+ * Banner
+ */
+.md-banner {
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #b9631c, #d83c3c, #7718bb);
+}
+
+/******************************************
+ * Auto headers link copy
  */
 .md-typeset h2 .wb-copy-link,
 .md-typeset h3 .wb-copy-link,
