@@ -39,9 +39,9 @@ extra:
       lang: fr
 
 extra_css:
-  - '_assets/styles.css'
+  - _assets/styles.css
 extra_javascript:
-  - '_assets/code.js'
+  - _assets/code.js
   
 markdown_extensions:
   - meta
