@@ -15,7 +15,7 @@ site_url: https://weeblr.github.io/jdevdocs/
 
 theme:
   name: material
-  custom_dir: _overrides/
+  custom_dir: _overrides
   palette: 
     - scheme: default
       toggle:

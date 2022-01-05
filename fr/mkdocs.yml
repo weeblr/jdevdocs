@@ -1,9 +1,9 @@
 nav:
   - Accueil: 'index.md'
-  - Getting Started:
-      - Workstation setup: 'getting-started/workstation.md'
-      - Secure coding: 'getting-started/secure-coding-guidelines.md'
-      - Best practices: 'getting-started/joomla-dev-best-practises.md'
+  - Démarrage:
+      - Matériel: 'getting-started/workstation.md'
+      - Progammation securisée: 'getting-started/secure-coding-guidelines.md'
+      - Bonnes pratiques: 'getting-started/joomla-dev-best-practises.md'
   - Contribuer:
       - Introduction & outils: 'contribute/index.md'
 
@@ -15,13 +15,13 @@ site_url: https://weeblr.github.io/jdevdocs/
 
 theme:
   name: material
-  custom_dir: _overrides/
-  palette: 
+  custom_dir: _overrides
+  palette:
     - scheme: default
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
-    - scheme: slate 
+    - scheme: slate
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
@@ -42,7 +42,7 @@ extra_css:
   - '_assets/styles.css'
 extra_javascript:
   - '_assets/code.js'
-  
+
 markdown_extensions:
   - meta
   - admonition

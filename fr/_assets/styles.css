@@ -1,0 +1,57 @@
+/******************************************
+ * Images
+ */
+img {
+    -webkit-filter: drop-shadow(0.35rem 0.35rem 0.35rem #4A5568);
+    filter: drop-shadow(0.35rem 0.35rem 0.23rem #4A5568);
+}
+
+/******************************************
+ * Enhancements
+ */
+h2:target, h3:target, h4:target {
+    margin-top: 100px;
+}
+
+/******************************************
+ * Auto link copy
+ */
+.md-typeset h2 .wb-copy-link,
+.md-typeset h3 .wb-copy-link,
+.md-typeset h4 .wb-copy-link {
+    visibility: hidden;
+    font-size: 0.85rem;
+    margin-left: 1rem;
+    padding: 0 0.25rem;
+    cursor: pointer;
+}
+
+h2:hover .wb-copy-link,
+h3:hover .wb-copy-link,
+h4:hover .wb-copy-link {
+    visibility: visible;
+}
+
+.wb-log-body h2 .wb-copy-link,
+.wb-log-body h2:hover .wb-copy-link,
+.wb-log-body h3 .wb-copy-link,
+.wb-log-body h3:hover .wb-copy-link,
+.wb-log-body h4 .wb-copy-link,
+.wb-log-body h4:hover .wb-copy-link {
+    display: none;
+}
+
+/******************************************
+ * Utilities
+ */
+.wb-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
