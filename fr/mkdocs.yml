@@ -1,11 +1,16 @@
 nav:
   - Accueil: 'index.md'
-  - Contribuer: 'contribute.md'
+  - Getting Started:
+      - Workstation setup: 'getting-started/workstation.md'
+      - Secure coding: 'getting-started/secure-coding-guidelines.md'
+      - Best practices: 'getting-started/joomla-dev-best-practises.md'
+  - Contribuer:
+      - Introduction & outils: 'contribute/index.md'
 
 docs_dir: docs
 site_dir: '../docs/fr'
 
-site_name: Joomla developer documentation test site
+site_name: Documentation pour les développeurs Joomla
 site_url: https://weeblr.github.io/jdevdocs/
 
 theme:
