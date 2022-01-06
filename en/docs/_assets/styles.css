@@ -1,8 +1,7 @@
 /******************************************
  * Images
  */
-main img,
-.wb-modal-container img {
+main img {
     -webkit-filter: drop-shadow(0.35rem 0.35rem 0.35rem #4A5568);
     filter: drop-shadow(0.35rem 0.35rem 0.23rem #4A5568);
     border-radius: 0.5rem;
@@ -39,6 +38,9 @@ main img,
 .wb-modal-img {
     max-width: 100%;
     max-height: 100%;
+    -webkit-filter: drop-shadow(0.35rem 0.35rem 0.35rem #4A5568);
+    filter: drop-shadow(0.35rem 0.35rem 0.23rem #4A5568);
+    border-radius: 0.5rem;
 }
 
 .wb-modal-close {
