@@ -12,10 +12,6 @@ main img,
     main img:hover {
         cursor: zoom-in;
     }
-
-    main .wb-focused-image:hover {
-        cursor: zoom-out;
-    }
 }
 
 /******************************************
