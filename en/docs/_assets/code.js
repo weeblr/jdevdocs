@@ -139,7 +139,11 @@ var wbModal = (function () {
 }());
 
 window.addEventListener("DOMContentLoaded", function (e) {
-    if (document.body.clientWidth < 768) {
+    if (
+        document.documentElement.clientWidth < 768
+        ||
+        document.documentElement.clientHeight < 600
+    ) {
         return
     }
 
