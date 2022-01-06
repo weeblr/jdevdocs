@@ -8,16 +8,14 @@ main img,
     border-radius: 0.5rem;
 }
 
-main .wb-focused-image {
-    max-width: initial;
-}
+@media only screen and (min-width: 768px) and (min-height: 600px) {
+    main img:hover {
+        cursor: zoom-in;
+    }
 
-main img:hover {
-    cursor: zoom-in;
-}
-
-main .wb-focused-image:hover {
-    cursor: zoom-out;
+    main .wb-focused-image:hover {
+        cursor: zoom-out;
+    }
 }
 
 /******************************************
