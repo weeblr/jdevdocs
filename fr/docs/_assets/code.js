@@ -46,42 +46,130 @@ window.addEventListener("DOMContentLoaded", function (e) {
         }
     })
 })
+
+var wbModal = (function () {
+    var wbModalContainer
+    var wbModalClose
+    var wbModalImage
+    var current
+
+    const initModal = function () {
+        if (!wbModalContainer) {
+            let containerEl = document.createElement('div')
+            containerEl.classList.add('wb-modal-container')
+            wbModalContainer = document.body.appendChild(containerEl)
+            let closeEl = document.createElement('button')
+            closeEl.classList.add('wb-modal-close')
+            closeEl.innerHTML = '&times;'
+            closeEl.addEventListener('click', wbModal.close)
+            wbModalClose = wbModalContainer.appendChild(closeEl)
+            let imgEl = document.createElement('img')
+            imgEl.classList.add('wb-modal-img')
+            wbModalImage = wbModalContainer.appendChild(imgEl)
+        }
+    }
+
+    const keyboardHandler = function (e) {
+        if (wbModal.isEscape(e)) {
+            e.preventDefault()
+            e.stopPropagation()
+            wbModal.close()
+        }
+        if (!wbModal.isEnterOrSpace(e)) {
+            e.preventDefault()
+            e.stopPropagation()
+        }
+    }
+
+    const clickHandler = function (e) {
+        if (e.target !== wbModalClose) {
+            e.preventDefault()
+            e.stopPropagation()
+            wbModalClose.focus()
+        }
+    }
+
+    return {
+        open: function (img) {
+            if (current) {
+                return
+            }
+            initModal()
+            wbModalImage.setAttribute(
+                'src',
+                img.getAttribute('src')
+            )
+            let alt = img.getAttribute('alt')
+            alt && wbModalImage.setAttribute('alt', alt)
+            let title = img.getAttribute('title')
+            title && wbModalImage.setAttribute('title', title)
+            current = img
+            wbModalContainer.style.display = 'flex'
+            setTimeout(wbModal.focus, 200)
+        },
+
+        close: function () {
+            if (!current) {
+                return
+            }
+            current.focus()
+            current = null
+            initModal()
+            wbModalContainer.removeEventListener('keydown', keyboardHandler)
+            wbModalContainer.removeEventListener('click', clickHandler)
+            wbModalContainer.style.display = 'none'
+        },
+
+        focus: function () {
+            if (current) {
+                wbModalClose.focus()
+                wbModalContainer.addEventListener('keydown', keyboardHandler)
+                wbModalContainer.addEventListener('click', clickHandler)
+            }
+        },
+
+        isEscape: function (e) {
+            return e.key === 'Escape' || e.keyCode === 27
+        },
+        isEnterOrSpace: function (e) {
+            return e.key === 'Enter' || e.keyCode === 13 || e.key === 'Space' || e.keyCode === 32
+        }
+    }
+
+}());
+
 window.addEventListener("DOMContentLoaded", function (e) {
+    if (document.body.clientWidth < 768) {
+        return
+    }
+
     var tagsList = ['img']
     var tags = []
     tagsList.map(function (tag) {
         tags[tag] = document.getElementsByTagName(tag)
     })
 
-    let onFocusImageEvent = function (e) {
-        if (document.activeElement === e.target) {
-            e.target.classList.add('wb-focused-image')
-        } else {
-            e.target.classList.remove('wb-focused-image')
-            delete e.target.dataset.wbzoomed
+    let openOnKey = function (e) {
+        if (wbModal.isEnterOrSpace(e)) {
+            e.preventDefault()
+            e.stopPropagation()
+            wbModal.open(e.target)
         }
     }
 
-    let onClickImage = function (e) {
+    let modalImage = function (e) {
         e.preventDefault()
         e.stopPropagation()
-        if (document.activeElement === e.target) {
-            if (e.target.dataset.wbzoomed === 'true') {
-                e.target.classList.remove('wb-focused-image')
-                delete e.target.dataset.wbzoomed
-            } else {
-                e.target.classList.add('wb-focused-image')
-                e.target.dataset.wbzoomed = 'true'
-            }
-        }
+        wbModal.open(e.target)
     }
 
     let processTag = function (tag) {
         tag.setAttribute('tabindex', '0')
-        tag.addEventListener("blur", onFocusImageEvent)
-        tag.addEventListener("focus", onFocusImageEvent)
-        tag.addEventListener("click", onClickImage)
+        tag.setAttribute('aria-label', 'Press Enter or Space to enlarge image.')
+        tag.addEventListener("keydown", openOnKey)
+        tag.addEventListener("click", modalImage)
     }
+
     tagsList.map(function (tag) {
         for (let i = 0; i < tags[tag].length; i++) {
             processTag(tags[tag][i])
