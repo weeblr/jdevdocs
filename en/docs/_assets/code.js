@@ -58,14 +58,17 @@ var wbModal = (function () {
             let containerEl = document.createElement('div')
             containerEl.classList.add('wb-modal-container')
             wbModalContainer = document.body.appendChild(containerEl)
+            let modalWrapperEl = document.createElement('div')
+            modalWrapperEl.classList.add('wb-modal-wrapper')
+            modalWrapperEl = wbModalContainer.appendChild(modalWrapperEl)
             let closeEl = document.createElement('button')
             closeEl.classList.add('wb-modal-close')
             closeEl.innerHTML = '&times;'
             closeEl.addEventListener('click', wbModal.close)
-            wbModalClose = wbModalContainer.appendChild(closeEl)
+            wbModalClose = modalWrapperEl.appendChild(closeEl)
             let imgEl = document.createElement('img')
             imgEl.classList.add('wb-modal-img')
-            wbModalImage = wbModalContainer.appendChild(imgEl)
+            wbModalImage = modalWrapperEl.appendChild(imgEl)
         }
     }
 
