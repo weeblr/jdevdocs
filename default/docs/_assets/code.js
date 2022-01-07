@@ -64,6 +64,7 @@ var wbModal = (function () {
             let closeEl = document.createElement('button')
             closeEl.classList.add('wb-modal-close')
             closeEl.innerHTML = '&times;'
+            closeEl.setAttribute('aria-label', 'Press Enter or Space to close enlarged image.')
             closeEl.addEventListener('click', wbModal.close)
             wbModalClose = modalWrapperEl.appendChild(closeEl)
             let imgEl = document.createElement('img')
