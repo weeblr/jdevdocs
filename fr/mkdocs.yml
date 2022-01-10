@@ -10,7 +10,7 @@ nav:
       - License FAQ: 'https://docs.joomla.org/JEDL/FAQ'
 
 docs_dir: docs
-site_dir: '../docs/en'
+site_dir: '../docs/fr'
 
 site_name: Joomla!™ developer documentation
 site_url: https://weeblr.github.io/jdevdocs/
