@@ -1,29 +1,53 @@
-docs_dir: docs
-site_dir: '../docs'
+nav:
+  - Home: 'index.md'
+  - Getting Started:
+      - Workstation setup: 'getting-started/workstation.md'
+      - Secure coding: 'getting-started/secure-coding-guidelines.md'
+      - Best practices: 'getting-started/joomla-dev-best-practises.md'
+  - This documentation:
+      - Contributing - Overview: 'contribute/tools.md'
+      - License: 'https://docs.joomla.org/Special:MyLanguage/JEDL'
+      - License FAQ: 'https://docs.joomla.org/JEDL/FAQ'
 
-site_name: Joomla developer documentation test site
+docs_dir: docs
+site_dir: '../docs/en'
+
+site_name: Joomla!™ developer documentation
 site_url: https://weeblr.github.io/jdevdocs/
 
 theme:
   name: material
-  custom_dir: _overrides/
-  palette: 
-    - scheme: default
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-    - scheme: slate 
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
+  custom_dir: _overrides
 
+# Palette switcher de-activated
+#  palette:
+#    - scheme: default
+#      toggle:
+#        icon: material/toggle-switch-off-outline
+#        name: Switch to dark mode
+#    - scheme: slate
+#      toggle:
+#        icon: material/toggle-switch
+#        name: Switch to light mode
+#
 #  logo: https://xxxx.com/logo.png
 #  favicon: _images/favicon-32x32.png
 
+# Only one language
+extra:
+  alternate:
+    - name: English
+      link: /jdevdocs/en/
+      lang: en
+#    - name: French
+#      link: /jdevdocs/fr/
+#      lang: fr
+
 extra_css:
-  - '_assets/styles.css'
+  - _assets/styles.css
+  - _assets/joomla.css
 extra_javascript:
-  - '_assets/code.js'
+  - _assets/code.js
   
 markdown_extensions:
   - meta

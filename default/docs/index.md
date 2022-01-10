@@ -16,5 +16,5 @@ This is a proof of concept website to develop a proper workflow and produce Joom
 This documentation is available in:
 
 - [English](en/)
-- [French](fr/)
+
 
