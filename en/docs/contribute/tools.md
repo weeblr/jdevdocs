@@ -26,7 +26,7 @@ New content, or changes to existing content is done in the same way code is modi
 
 ![Editing a documentation page directly on Github](../_images/github-editing.png)
 
-- For more complex changes, or simply more convinience, use your regular git development workflow, with your preferred IDE (VSCode, Jetbrains IDES, Sublime Text,etc)
+- For more complex changes, or simply more convenience, use your regular git development workflow, with your preferred IDE (VSCode, Jetbrains IDES, Sublime Text,etc)
 
 ## Building and publishing
 
