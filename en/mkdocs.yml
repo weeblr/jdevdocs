@@ -16,7 +16,7 @@ site_name: Joomla!™ developer documentation
 site_url: https://weeblr.github.io/jdevdocs/
 repo_url: https://github.com/weeblr/jdevdocs
 repo_name: Joomla! developer documentation
-edit_uri: ""
+edit_uri: edit/main/en/docs/
 
 
 theme:
