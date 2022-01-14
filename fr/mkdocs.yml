@@ -14,10 +14,16 @@ site_dir: '../docs/fr'
 
 site_name: Joomla!™ developer documentation
 site_url: https://weeblr.github.io/jdevdocs/
+repo_url: https://github.com/weeblr/jdevdocs
+repo_name: Joomla! developer documentation
+edit_uri: ""
+
 
 theme:
   name: material
   custom_dir: _overrides
+  icon:
+    repo: fontawesome/brands/github
 
 # Palette switcher de-activated
 #  palette:
@@ -49,6 +55,9 @@ extra_css:
 extra_javascript:
   - _assets/code.js
   
+#plugins:
+#  - git-revision-date
+
 markdown_extensions:
   - meta
   - admonition
