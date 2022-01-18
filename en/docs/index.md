@@ -4,11 +4,15 @@ description: Joomla test site for building developer documentation
 author: JUG Extension Developer
 ---
 
+<br />
+!!! quote "No amount of developer advocates can overcome bad docs. (<small>Shawn "swyx" Wang</small>)"
+<br/>
+
 # Welcome to the Joomla developers documentation
 
 This website provides developer documentation for [the Joomla CMS](https://www.joomla.org). It is a collaborative effort and is constantly updated for accuracy.
 
-You too can contribute to this documentation for the benefit of us all. It can be just fixing a small typo, or maybe document a complete Joomla API. 
+You, too, can contribute to this documentation for the benefit of us all. It can be just fixing a small typo, or maybe document a complete Joomla API. 
 
 Visit the [How to contribute](./contribute/index.md) page for learn how to do that. All it takes is a Github account! 
 

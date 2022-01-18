@@ -59,6 +59,7 @@ extra_javascript:
 #  - git-revision-date
 
 markdown_extensions:
+  - abbr
   - meta
   - admonition
   - codehilite:
